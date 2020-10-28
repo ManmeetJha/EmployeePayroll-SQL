@@ -18,3 +18,7 @@ INSERT INTO employee_payroll (NAME,SALARY,START_DATE) VALUES
 SELECT * FROM employee_payroll;
 
 SELECT * FROM employee_payroll WHERE START_DATE BETWEEN CAST('2020-02-05' AS DATE) AND DATE(NOW());
+
+ALTER TABLE employee_payroll ADD GENDER VARCHAR(1) AFTER NAME;
+UPDATE employee_payroll SET GENDER='M' WHERE NAME='Manmeet' OR NAME='Navneet';
+UPDATE employee_payroll SET GENDER='F' WHERE NAME='Harmanpreet';
