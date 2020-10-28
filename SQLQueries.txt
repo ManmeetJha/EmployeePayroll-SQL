@@ -8,3 +8,9 @@ CREATE TABLE employee_payroll (
   START_DATE DATE NOT NULL,
   PRIMARY KEY (ID)
 );
+
+INSERT INTO employee_payroll (NAME,SALARY,START_DATE) VALUES
+('Manmeet',50000.00,'2020-01-01'),
+('Navneet',80000.00,'2020-03-05'),
+('Harmanpreet',60000.00,'2020-05-07')
+;
