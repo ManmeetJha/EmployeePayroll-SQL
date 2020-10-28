@@ -14,3 +14,5 @@ INSERT INTO employee_payroll (NAME,SALARY,START_DATE) VALUES
 ('Navneet',80000.00,'2020-03-05'),
 ('Harmanpreet',60000.00,'2020-05-07')
 ;
+
+SELECT * FROM employee_payroll;
