@@ -31,6 +31,7 @@ SELECT SUM(SALARY) FROM employee_payroll GROUP BY GENDER;
 SELECT MIN(SALARY) FROM employee_payroll GROUP BY GENDER;
 SELECT MAX(SALARY) FROM employee_payroll GROUP BY GENDER; 
 
+
 ALTER TABLE employee_payroll ADD phoneNo VARCHAR(15) AFTER NAME;
 ALTER TABLE employee_payroll ADD department VARCHAR(50) AFTER address;
 ALTER TABLE employee_payroll ADD address VARCHAR(100) AFTER phoneNo;
@@ -44,3 +45,4 @@ ALTER TABLE employee_payroll ADD netPay Double NOT NULL AFTER incomeTax;
 
 insert into employee_payroll (name, department,gender, basicPay, deductions, taxablePay, incomeTax, netPay, start_date) VALUES('Terisa','Marketing','F', 3000000.00, 1000000.00, 2000000.00,500000.00, 1500000.00, '2018-01-03');
 insert into employee_payroll (name, department,gender, basicPay, deductions, taxablePay, incomeTax, netPay, start_date) VALUES('Terisa','Sales','F', 3000000.00,0, 0,0, 0, '2019-11-13');
+
