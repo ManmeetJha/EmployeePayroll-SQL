@@ -41,3 +41,6 @@ ALTER TABLE employee_payroll ADD deductions DOUBLE NOT NULL AFTER basicPay;
 ALTER TABLE employee_payroll ADD taxablePay DOUBLE NOT NULL AFTER deductions;
 ALTER TABLE employee_payroll ADD incomeTax DOUBLE NOT NULL AFTER taxablePay;       
 ALTER TABLE employee_payroll ADD netPay Double NOT NULL AFTER incomeTax;
+
+insert into employee_payroll (name, department,gender, basicPay, deductions, taxablePay, incomeTax, netPay, start_date) VALUES('Terisa','Marketing','F', 3000000.00, 1000000.00, 2000000.00,500000.00, 1500000.00, '2018-01-03');
+insert into employee_payroll (name, department,gender, basicPay, deductions, taxablePay, incomeTax, netPay, start_date) VALUES('Terisa','Sales','F', 3000000.00,0, 0,0, 0, '2019-11-13');
